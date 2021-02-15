@@ -1,0 +1,13 @@
+<div class="content-wrapper" style="display: flex; justify-content: center;">
+    <div class="card" style="width: 38rem;">
+        <img src="../assets/img/transfer.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="col-auto">
+            <h5 class="card-title">Money Transfer from <b class=" text-danger">{{fromUserName}}------>{{toUserName}}</b></h5><br><br>
+            <label for="money" class="visually-hidden">Enter Amount</label>
+            <input type="number" class="form-control" [(ngModel)] = 'sendMoney' placeholder="Enter amount to be send!!">
+          </div><br>
+          <button class="btn btn-outline-danger ml-2" (click)="send()">Send Money</button>
+        </div>
+      </div>
+</div>

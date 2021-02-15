@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>{{usersEntity.username}}</h1>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+  
+      <!-- Default box -->
+      <div class="card profile">
+        <div class="card-body content">
+          <h1 class="card-title">Customer Name : {{usersEntity.username}}</h1><br>
+          <p class="card-title">Mobile Number : {{usersEntity.number}}</p><br>
+          <p class="card-title">Email : {{usersEntity.email}}</p><br>
+          <p class="card-title">Current Balace : {{usersEntity.balance}}</p><br>
+          <button type="button" class="btn" (click)="transferMoney(usersEntity.userId)">Transfer Money</button> &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
